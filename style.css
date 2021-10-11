@@ -1,0 +1,129 @@
+:root {
+--bright-orange: hsl(31, 77%, 52%)
+--dark-cyan: hsl(184, 100%, 22%)
+--very-dark-cyan: hsl(179, 100%, 13%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out; /*this makes the change of state more gradual and smooth*/
+}
+
+.bright-orange {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.bright-orange .btn {
+    color:hsl(31, 77%, 52%);
+}
+
+.dark-cyan {
+    background-color: hsl(184, 100%, 22%)
+}
+
+.dark-cyan .btn {
+    color:hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+.very-dark-cyan .btn {
+    color:hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    max-width: 375px;
+}
+
+.card {
+    padding: 30px;
+}
+
+.card img {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 990px) {
+    .container { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+    .bright-orange {
+        border-radius: 5px 0 0 5px;
+    }
+    .very-dark-cyan {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .card p {
+        margin-bottom: 50px;
+    }
+    .btn {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
